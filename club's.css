@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background:#0e1538;
+}
+.but{
+    display: flex;
+    justify-content: flex-end;
+}
+.box{
+    position: relative;
+    width: 90.5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin: 20px;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 250%;
+    background:linear-gradient(#00ccff,#d400d4);
+    animation: animate 4s linear infinite;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background:#0e1538;
+    border-radius: 16px;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(350deg);
+    }
+}
+.box a{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    z-index:10;
+}
+.box a:hover{
+    color:#00ccff;
+}
+
+
+
+     
+.name h2{
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    padding-top: 30px;
+    font-size: xx-large;
+    word-spacing: 10px;
+    color: #fff;
+}
+.club-name{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-left: 100px;
+    padding: 0 10px;
+    word-spacing: 10px;
+    width: 20%;
+    float: left;
+    color: #fff;
+
+
+}
+.club-list .english{
+    height: 10vh;
+    text-align: center;
+    font-size: x-large;
+    text-transform: capitalize;
+    display: inline-block;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(255, 255, 255, 0.16);
+}
+.club-list .fine-art{
+    height: 10vh;
+    margin-top: 20px;
+    font-size: x-large;
+    text-transform: capitalize;
+    display: inline-block;
+    /*background*/
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+}
+.club-list .phtography{
+    height: 10vh;
+    margin-top: 20px;
+    font-size: x-large;
+    text-transform: capitalize;
+    display: inline-block;
+    /*background*/
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+}
+.club-list .electronic{
+    height: 10vh;
+    margin-top: 20px;
+    font-size: x-large;
+    text-transform: capitalize;
+    display: inline-block;
+        /*background*/
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+}
+.club-list .yoga{
+    height: 10vh;
+    margin-top: 20px;
+    font-size: x-large;
+    text-transform: capitalize;
+    display: inline-block;
+        /*background*/
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+}
+.club-list .robotics{
+    height: 10vh;
+    margin-top: 20px;
+    font-size: x-large;
+    text-transform: capitalize;
+    display: inline;
+        /*background*/
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+}
+.image{
+    width: 70%;
+    float: right;
+}
